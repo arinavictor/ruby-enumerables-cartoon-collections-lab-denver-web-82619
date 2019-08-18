@@ -9,9 +9,9 @@ def summon_captain_planet(planeteer_calls)
  new_calls = planeteer_calls.map { |call| call.capitalize + "!" }
 end
 
-def long_planeteer_calls(planeteer_calls)
+def long_planeteer_calls(calls_long)
   # Your code here
-  are_long = long_planeteer_calls.any? {|call| call.length > 4}
+  are_long = calls_long.any? {|call| call.length > 4}
   return are_long
 end
 
